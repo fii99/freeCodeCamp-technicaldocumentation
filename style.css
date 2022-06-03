@@ -228,9 +228,11 @@ body {
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 370px) {
   #navbar {
-    min-width: 160px;
+    min-width: 120px;
+    max-width: 130px;
+    background: #fff;
   }
 
   #navbar > ul {
@@ -243,7 +245,7 @@ body {
   }
 
   #main-doc {
-    margin-left: 160px;
+    margin-left: 120px;
     padding: 25px;
   }
 
@@ -260,5 +262,12 @@ body {
 
   #main-doc code {
     margin-left: 1rem;
+  }
+
+  #navbar ul li:nth-child(3n + 0) .slide-div:hover .nav-link,
+  #navbar ul li:nth-child(6n - 4) .slide-div:hover .nav-link,
+  #navbar ul li:nth-child(3n - 2) .slide-div:hover .nav-link,
+  #navbar ul li:nth-child(6n - 1) .slide-div:hover .nav-link {
+    letter-spacing: 4px;
   }
 }
