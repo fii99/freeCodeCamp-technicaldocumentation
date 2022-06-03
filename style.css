@@ -227,3 +227,38 @@ body {
     line-height: 28px;
   }
 }
+
+@media (max-width: 390px) {
+  #navbar {
+    min-width: 160px;
+  }
+
+  #navbar > ul {
+    height: 67.25%;
+  }
+
+  .nav-link {
+    padding: 1.6rem 0;
+    padding-left: 0.6rem;
+  }
+
+  #main-doc {
+    margin-left: 160px;
+    padding: 25px;
+  }
+
+  #main-doc p {
+    line-height: calc(0.2rem + 3vh);
+    margin-left: 1rem;
+  }
+
+  #main-doc ul > li,
+  #main-doc code {
+    line-height: 28px;
+    margin-left: 2.4rem;
+  }
+
+  #main-doc code {
+    margin-left: 1rem;
+  }
+}
