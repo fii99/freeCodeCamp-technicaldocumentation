@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>HTML Documentation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header><h1>HTML</h1></header>
+      <ul>
+        <li>
+          <div class="slide-div">
+            <a href="#introduction" class="nav-link">Introduction</a>
+          </div>
+        </li>
+        <li>
+          <div class="slide-div">
+            <a href="#attributes" class="nav-link">Attributes</a>
+          </div>
+        </li>
+        <li>
+          <div class="slide-div">
+            <a href="#headings" class="nav-link">Headings</a>
+          </div>
+        </li>
+        <li>
+          <div class="slide-div">
+            <a href="#paragraphs" class="nav-link">Paragraphs</a>
+          </div>
+        </li>
+        <li>
+          <div class="slide-div">
+            <a href="#styles" class="nav-link">Styles</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
+        <header><h1>Introduction</h1></header>
+        <article>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
+            exercitationem beatae voluptates reiciendis facilis ipsam eveniet
+            minus illo reprehenderit neque rerum, aut explicabo ad accusamus
+            possimus voluptas obcaecati quaerat totam!
+          </p>
+          <ul>
+            <li>Example 1</li>
+            <li>Example 2</li>
+            <li>Example 3</li>
+            <li>Example 4</li>
+            <li>Example 5</li>
+          </ul>
+          <code>
+            <em
+              ><q
+                >learn more to become a frontend developer, basic program can
+                lead you to mastering your field</q
+              ></em
+            >
+          </code>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
+            exercitationem beatae voluptates reiciendis facilis ipsam eveniet
+            minus illo reprehenderit neque rerum, aut explicabo ad accusamus
+            possimus voluptas obcaecati quaerat totam!
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="attributes">
+        <header><h1>Attributes</h1></header>
+        <article>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
+            exercitationem beatae voluptates reiciendis facilis ipsam eveniet
+            minus illo reprehenderit neque rerum, aut explicabo ad accusamus
+            possimus voluptas obcaecati quaerat totam!
+          </p>
+          <ul>
+            <li>Example 1</li>
+            <li>Example 2</li>
+            <li>Example 3</li>
+            <li>Example 4</li>
+            <li>Example 5</li>
+          </ul>
+          <code>
+            <em
+              ><q
+                >learn more to become a frontend developer, basic program can
+                lead you to mastering your field</q
+              ></em
+            >
+          </code>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
+            exercitationem beatae voluptates reiciendis facilis ipsam eveniet
+            minus illo reprehenderit neque rerum, aut explicabo ad accusamus
+            possimus voluptas obcaecati quaerat totam!
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="headings">
+        <header><h1>Headings</h1></header>
+        <article>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
+            exercitationem beatae voluptates reiciendis facilis ipsam eveniet
+            minus illo reprehenderit neque rerum, aut explicabo ad accusamus
+            possimus voluptas obcaecati quaerat totam!
+          </p>
+          <ul>
+            <li>Example 1</li>
+            <li>Example 2</li>
+            <li>Example 3</li>
+            <li>Example 4</li>
+            <li>Example 5</li>
+          </ul>
+          <code>
+            <em
+              ><q
+                >learn more to become a frontend developer, basic program can
+                lead you to mastering your field</q
+              ></em
+            >
+          </code>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
+            exercitationem beatae voluptates reiciendis facilis ipsam eveniet
+            minus illo reprehenderit neque rerum, aut explicabo ad accusamus
+            possimus voluptas obcaecati quaerat totam!
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="paragraphs">
+        <header><h1>Paragraphs</h1></header>
+        <article>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
+            exercitationem beatae voluptates reiciendis facilis ipsam eveniet
+            minus illo reprehenderit neque rerum, aut explicabo ad accusamus
+            possimus voluptas obcaecati quaerat totam!
+          </p>
+          <ul>
+            <li>Example 1</li>
+            <li>Example 2</li>
+            <li>Example 3</li>
+            <li>Example 4</li>
+            <li>Example 5</li>
+          </ul>
+          <code>
+            <em
+              ><q
+                >learn more to become a frontend developer, basic program can
+                lead you to mastering your field</q
+              ></em
+            >
+          </code>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
+            exercitationem beatae voluptates reiciendis facilis ipsam eveniet
+            minus illo reprehenderit neque rerum, aut explicabo ad accusamus
+            possimus voluptas obcaecati quaerat totam!
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="styles">
+        <header><h1>Styles</h1></header>
+        <article>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
+            exercitationem beatae voluptates reiciendis facilis ipsam eveniet
+            minus illo reprehenderit neque rerum, aut explicabo ad accusamus
+            possimus voluptas obcaecati quaerat totam!
+          </p>
+          <ul>
+            <li>Example 1</li>
+            <li>Example 2</li>
+            <li>Example 3</li>
+            <li>Example 4</li>
+            <li>Example 5</li>
+          </ul>
+          <code>
+            <em
+              ><q
+                >learn more to become a frontend developer, basic program can
+                lead you to mastering your field</q
+              ></em
+            >
+          </code>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
+            exercitationem beatae voluptates reiciendis facilis ipsam eveniet
+            minus illo reprehenderit neque rerum, aut explicabo ad accusamus
+            possimus voluptas obcaecati quaerat totam!
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

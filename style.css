@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #383838;
+  --gray: #f0f0f0;
+  --transition: all 600ms ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: var(--black);
+}
+
+body {
+  font-family: "Roboto";
+  overflow-x: hidden;
+  background: var(--white);
+}
+
+#main-doc h1 {
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: calc(1rem + 1.5vw);
+  margin-bottom: 1rem;
+}
+
+#main-doc p {
+  font-size: calc(0.4rem + 0.8vw);
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: calc(0.6rem + 4vh);
+  text-align: justify;
+  margin-left: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+#main-doc ul > li {
+  font-size: calc(0.4rem + 0.8vw);
+  margin-left: 6rem;
+  list-style-type: disc;
+  list-style-position: inside;
+  letter-spacing: 2px;
+  line-height: 36px;
+}
+
+#main-doc ul {
+  margin-bottom: 1.2rem;
+}
+
+#main-doc code {
+  display: block;
+  margin-left: 3rem;
+  background: var(--gray);
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.2rem;
+  line-height: 32px;
+  font-size: calc(0.4rem + 0.8vw);
+}
+
+/* NAVBAR */
+
+#navbar {
+  position: fixed;
+  min-width: 280px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-right: 3px solid var(--black);
+  z-index: 11;
+}
+
+#navbar > header {
+  padding: 25px 0;
+  text-align: center;
+}
+
+#navbar h1 {
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: calc(1rem + 1.5vw);
+}
+
+#navbar > ul {
+  padding: 0;
+  background: var(--background);
+  height: 70%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  cursor: pointer;
+}
+
+.nav-link {
+  position: relative;
+  display: block;
+  padding: 2rem 0;
+  padding-left: 0.8rem;
+  text-align: start;
+  align-content: center;
+}
+
+#navbar ul li:nth-child(3n + 0) .nav-link::before,
+#navbar ul li:nth-child(6n - 4) .nav-link::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 0.2rem;
+  height: 95%;
+  background: #f24a72;
+  border-radius: 0 10px 10px 0;
+}
+
+#navbar ul li:nth-child(3n - 2) .nav-link::before,
+#navbar ul li:nth-child(6n - 1) .nav-link::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 0.2rem;
+  height: 95%;
+  background: #4700d8;
+  border-radius: 0 10px 10px 0;
+}
+
+#navbar ul li:nth-child(3n + 0) .slide-div .nav-link,
+#navbar ul li:nth-child(6n - 4) .slide-div .nav-link {
+  background: #fff;
+  transition: var(--transition);
+  font-size: calc(0.4rem + 0.8vw);
+}
+
+#navbar ul li:nth-child(3n + 0) .slide-div:hover .nav-link,
+#navbar ul li:nth-child(6n - 4) .slide-div:hover .nav-link {
+  animation: slide 400ms ease-in;
+  background-image: linear-gradient(
+    to bottom,
+    #f24a72 0%,
+    #f24a72 95%,
+    #fff 95%,
+    #fff 100%
+  );
+  color: #fff;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 8px;
+}
+
+#navbar ul li:nth-child(3n - 2) .slide-div .nav-link,
+#navbar ul li:nth-child(6n - 1) .slide-div .nav-link {
+  background: #fff;
+  transition: var(--transition);
+  font-size: calc(0.4rem + 0.8vw);
+}
+
+#navbar ul li:nth-child(3n - 2) .slide-div:hover .nav-link,
+#navbar ul li:nth-child(6n - 1) .slide-div:hover .nav-link {
+  animation: slide 400ms ease-in;
+  background-image: linear-gradient(
+    to bottom,
+    #4700d8 0%,
+    #4700d8 95%,
+    #fff 95%,
+    #fff 100%
+  );
+  color: #fff;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 8px;
+}
+
+@keyframes slide {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+#navbar ul li a.nav-link {
+  letter-spacing: 3px;
+  word-spacing: 5px;
+}
+
+/* MAIN */
+
+#main-doc {
+  margin-left: 280px;
+  padding: 25px 50px;
+}
+
+@media (max-width: 520px) {
+  #navbar {
+    min-width: 200px;
+  }
+
+  #navbar > ul {
+    height: 67.25%;
+  }
+
+  .nav-link {
+    padding: 1.6rem 0;
+    padding-left: 0.6rem;
+  }
+
+  #main-doc {
+    margin-left: 200px;
+    padding: 25px;
+  }
+
+  #main-doc p {
+    line-height: calc(0.2rem + 3vh);
+  }
+
+  #main-doc ul > li,
+  #main-doc code {
+    line-height: 28px;
+  }
+}
